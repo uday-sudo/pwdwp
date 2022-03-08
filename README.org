@@ -1,0 +1,16 @@
+#+TITLE: Readme
+#+AUTHOR: uday-sudo
+
+* pwdwp
+** Even i dunno at thsi point what this is gonna be(probably a password manager)
++ Purpose of making this is to learn new stuff
++ I want to create a linux app with a rofi a menu too
+** Personal Planning
+- Every entry will have the following fields
+  - username
+  - email
+  - password
+  - Notes
+** TODO list [0/2]
++ [ ] Make a database handler
++ [ ] Then we think further about the direction folks
