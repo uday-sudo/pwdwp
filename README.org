@@ -14,3 +14,14 @@
 ** TODO list [0/2]
 + [ ] Make a database handler
 + [ ] Then we think further about the direction folks
+** Dependencies:
+#+BEGIN_SRC
+pip install pysqlite3
+#+END_SRC
+** Functions to make:
++ Create if not exist
++ Give all
++ Add One
++ Delete one
++ Edit one
++ Create random passsword
