@@ -5,6 +5,7 @@ __pycache__/
 
 # Own exceptions
 *.db
+test.py
 
 # C extensions
 *.so

@@ -1,27 +1,18 @@
-#+TITLE: Readme
+#+TITLE: README
 #+AUTHOR: uday-sudo
 
 * pwdwp
-** Even i dunno at thsi point what this is gonna be(probably a password manager)
+** Password manager written in python.
 + Purpose of making this is to learn new stuff
-+ I want to create a linux app with a rofi a menu too
++ I want to create a linux app with a rofi like quick acess password copypaste menu
 ** Personal Planning
 - Every entry will have the following fields
+  - service
   - username
   - email
   - password
-  - Notes
-** TODO list [0/2]
-+ [ ] Make a database handler
-+ [ ] Then we think further about the direction folks
 ** Dependencies:
 #+BEGIN_SRC
-pip install pysqlite3
+pip install pysqlite3 pyperclip
 #+END_SRC
-** Functions to make:
-+ Create if not exist
-+ Give all
-+ Add One
-+ Delete one
-+ Edit one
-+ Create random passsword
+** I would not use this since this is in the "Just works category" and also isn't actually that good i just made it to learn GUI's

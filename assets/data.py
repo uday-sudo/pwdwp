@@ -4,8 +4,13 @@
 
 import sqlite3
 import random
+import pyperclip
 
 PATH_TO_DB = 'passwd.db'
+
+# Copy to clipboard
+def copy_text(text:str):
+	pyperclip.copy(text)
 
 # Generate a random password
 def gen_pass(caps:bool=True , smalls:bool=True , nums:bool=True , specials:bool=False , length_start:int=20 , length_end:int=32) -> str:
@@ -32,7 +37,7 @@ def make_if_not():
 		username TEXT,
 		email TEXT,
 		password TEXT,
-		NOTES TEXT
+		notes TEXT
 	)""")
 
 	# Commit everything and close connection
@@ -74,7 +79,7 @@ def edit_entry(id:int, entry:list):
 		username ?,
 		email ?,
 		password ?,
-		NOTES ?
+		notes ?
 		WHERE rowid = ?
 	""", tuple(entry))
 
@@ -86,7 +91,7 @@ def edit_entry(id:int, entry:list):
 def del_entry(id:int):
 	sqlConnection = sqlite3.connect(PATH_TO_DB)
 	sqlCursor = sqlConnection.cursor()
-	sqlCursor.execute("DELETE from passwd WHERE rowid = (?)", (id))
+	sqlCursor.execute("DELETE from passwd WHERE rowid = (?)", (str(id)))
 
 	# Commit Everything and close connection
 	sqlConnection.commit()
